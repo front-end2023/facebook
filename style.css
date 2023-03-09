@@ -1,0 +1,163 @@
+@font-face{
+    Font-Family: "SF Pro Display Regular";
+    src: url(fonts/FontsFree-Net-SFProDisplay-Regular.ttf),
+        format("truetype/.ttf")
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+main{
+    height: 78vh;
+    background-color: #F0F2F5;
+}
+main .container_1{
+    height: 100%;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .container_1 .left{
+    width: 45%;
+}
+main .container_1 .left img{
+    width: 300px;
+}
+main .container_1 .left .p_left{
+    font-size: 28px;
+    color: #1c1e21;
+    margin-top: 25px;
+}
+main .container_1 .main_right{
+    width: 40%;
+}
+main .container_1 .right{
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container_1 .right .top{
+    width: 95%;
+}
+main .container_1 .right .log_in{
+    display: flex;
+    flex-direction: column;
+}
+main .container_1 .right .log_in input{
+    height: 48px;
+    outline: none;
+    border-style: none;
+    border: 1px solid hsla(220, 17%, 14%, 0.37);
+    border-radius: 6px;
+    margin: 12px 10px;
+    font-size: 17px;
+    padding-left: 15px;
+}
+main .container_1 .right .log_in input::placeholder{
+    color: #1d212981;
+}
+main .container_1 .right .log_in [type="text"]:focus,
+main .container_1 .right .log_in [type="password"]:focus{
+    border-color: #1877f2;
+}
+main .container_1 .right .log_in [type="submit"]{
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 0;
+}
+main .container_1 .right .log_in [type="submit"]:hover{
+    background-color: #166fe5;
+    cursor: pointer;
+}
+main .container_1 .right .top a{
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1877f2;
+    border-bottom: 1px solid #1c1e214f;
+
+}
+main .container_1 .right .top a:hover{
+    text-decoration: underline;
+}
+main .container_1 .right .creat{
+    width: 45%;
+    margin: 24px auto;
+}
+main .container_1 .right .creat input{
+    width: 100%;
+    height: 48px;
+    background-color: #42b72a;
+    outline: none;
+    border-style: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+main .container_1 .right .creat input:hover{
+    background-color: #36a420;
+    cursor: pointer;
+}
+main .container_1 .main_right p{
+    font-size: 14px;
+    text-align: center;
+    color: #1c1e21;
+    margin-top: 28px;
+}
+main .container_1 .main_right p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c1e21;
+}
+footer ul{
+    width: 980px;
+    margin: 20px auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #8a8d91;
+}
+footer ul li{
+    font-size: 12px;
+    padding: 1px 10px 1px 0;
+    margin-bottom: 10px;
+}
+footer ul li a{
+    color: #8a8d91;
+    text-decoration: none;
+}
+footer .data{
+    width: 980px;
+    margin: 20px auto;
+}
+footer .data a{
+    font-size: 12px;
+    color: #8a8d91;
+    text-decoration: none;
+    padding: 1px 18px 1px 0;
+    line-height: 19px;
+}
+footer p{
+    width: 980px;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #8a8d91;
+}
