@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/images.jpg" type="icon/jpg">
+    <link rel="icon" href="images/Facebook-logo111.png" type="icon/jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -25,8 +25,8 @@
                             <input type="submit" value="Log in">
                         </form>
                         <a href="" class="forgot">Forgotten password?</a>
-                        <form action="" class="creat">
-                            <input type="submit" value="Creat new account">
+                        <form id="no_refresh" action="" class="creat" onsubmit="return false">
+                            <input id="creat_account" onclick="openPopUp()" type="submit" value="Creat new account">
                         </form>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="foot">
         <ul class="lang">
             <li><a href="">English (UK)</a></li>
             <li><a href="">العربية</a></li>
@@ -80,5 +80,119 @@
         </div>
         <p>Meta © 2023</p>
     </footer>
+    <div id="popUp" class="window">
+    <section class="sec_2" id="">
+        <div class="popup">
+            <div class="title">
+                <div class="title_top">
+                    <p>Sign Up</p>
+                    <i class="fa-solid fa-xmark" id="" onclick="closePopUp()"></i>
+                </div>
+                <p class="tit_p">It's quick and easy</p>
+            </div>
+            <form action="" class="user_name">
+                <input type="text" name="fname" id="firstname" placeholder="First name">
+                <input type="text" name="sname" id="surname" placeholder="Surname">
+            </form>
+            <form action="" class="user_data">
+                <input type="text" name="mob_ema" id="mob_mail" placeholder="Mobile number or email address">
+                <input type="password" name="passw" id="pass" placeholder="New password">
+            </form>
+            <p class="date_birth">Date of birth <i class="fa-solid fa-circle-question"></i></p>
+            <form action="" class="birth">
+                <select name="day" id="days" >
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                </select>
+                <select name="month" id="months">
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">August</option>
+                    <option value="">September</option>
+                    <option value="">October</option>
+                    <option value="">November </option>
+                    <option value="">December</option>
+                </select>
+                <select name="year" id="years">
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                    <option value="">2014</option>
+                    <option value="">2013</option>
+                    <option value="">2012</option>
+                    <option value="">2011</option>
+                    <option value="">2010</option>
+                    <option value="">2009</option>
+                    <option value="">2008</option>
+                    <option value="">2007</option>
+                    <option value="">2006</option>
+                    <option value="">2005</option>
+                    <option value="">2004</option>
+                </select>
+            </form>
+            <p class="date_birth">Gender <i class="fa-solid fa-circle-question"></i></p>
+            <div class="gender">
+                <form action="">
+                    <label for="fema">Female</label>
+                    <input type="radio" name="gend" id="fema">
+                </form>
+                <form action="">
+                    <label for="mal">Male</label>
+                    <input type="radio" name="gend" id="mal">
+                </form>
+                <form action="">
+                    <label for="cust">Custom</label>
+                    <input type="radio" name="gend" id="cust">
+                </form>
+            </div>
+            <p class="lower">People who use our service may have uploaded your contact information to Facebook. <a href=""> Learn more.</a></p>
+            <p class="lower">By clicking Sign Up, you agree to our <a href="">Terms,</a><a href="">Privacy Policy</a> and <a href="">Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time</p>
+            <form class="sign_up" action="">
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </section>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
