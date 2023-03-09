@@ -22,10 +22,10 @@ main .container_1{
     align-items: center;
 }
 main .container_1 .left{
-    width: 45%;
+    width: 50%;
 }
 main .container_1 .left img{
-    width: 300px;
+    width: 270px;
 }
 main .container_1 .left .p_left{
     font-size: 28px;
