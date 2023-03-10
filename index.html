@@ -19,9 +19,11 @@
             <div class="main_right">
                 <div class="right">
                     <div class="top">
-                        <form class="log_in" action="" method="get">
-                            <input type="text" name="" id="login_email" placeholder="Email address or phone number">
-                            <input type="password" name="" id="login_pass" placeholder="Password">
+                        <form class="log_in" action="" method="" id="form" onsubmit="return formValidate()">
+                            <input type="text" name="" id="login_email" value="" placeholder="Email address or phone number">
+                            <small class="user_error" id="userError"></small>
+                            <input type="password" name="" id="login_pass" value="" placeholder="Password">
+                            <small class="pass_error" id="passError"></small>
                             <input type="submit" value="Log in">
                         </form>
                         <a href="" class="forgot">Forgotten password?</a>
