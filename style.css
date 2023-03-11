@@ -85,6 +85,11 @@ main .container_1 .right .log_in [type="submit"]:hover{
     background-color: #166fe5;
     cursor: pointer;
 }
+.user_error,
+.pass_error{
+    padding-left: 15px;
+    color: red;
+}
 main .container_1 .right .top a{
     display: block;
     width: 95%;
@@ -183,7 +188,7 @@ footer p{
     align-items: center;
 }
 .sec_2 .popup{
-    width: 31%;
+    width: 423px;
     background-color: white;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
@@ -214,10 +219,24 @@ footer p{
 .sec_2 .popup .user_name{
     margin-top: 16px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
-.sec_2 .popup .user_name input{
+.sec_2 .popup .user_name .firstdata{
+    display: flex;
+    justify-content: space-around;
+}
+.sec_2 .popup .user_name .firstdata .fone{
     width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.sec_2 .popup .user_name .firstdata .fone small{
+    padding: 10px 0 0 0;
+    color: red;
+}
+.sec_2 .popup .firstdata [type="text"]{
+    width: 100%;
     height: 40px;
     background-color: #F5F6F7;
     border-radius: 5px;
@@ -251,6 +270,11 @@ footer p{
     color: rgba(28, 30, 33, 0.7);
     padding-left: 10px;
 }
+.sec_2 .popup .user_data small{
+    align-self: flex-start;
+    color: red;
+    padding: 5px 0 0 10px;
+}
 .sec_2 .popup .date_birth{
     margin: 15px 0px 5px 10px;
     font-size: 12px;
@@ -275,7 +299,7 @@ footer p{
     display: flex;
     justify-content: space-around;
 }
-.sec_2 .popup .gender form{
+.sec_2 .popup .gender .allgend{
     width: 28%;
     height: 36px;
     font-size: 15px;

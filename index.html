@@ -92,16 +92,25 @@
                 </div>
                 <p class="tit_p">It's quick and easy</p>
             </div>
-            <form action="" class="user_name">
-                <input type="text" name="fname" id="firstname" placeholder="First name">
-                <input type="text" name="sname" id="surname" placeholder="Surname">
-            </form>
-            <form action="" class="user_data">
-                <input type="text" name="mob_ema" id="mob_mail" placeholder="Mobile number or email address">
-                <input type="password" name="passw" id="pass" placeholder="New password">
-            </form>
-            <p class="date_birth">Date of birth <i class="fa-solid fa-circle-question"></i></p>
-            <form action="" class="birth">
+            <form action="home.html" class="user_name" onsubmit="return signUpValidate()">
+                <div class="firstdata">
+                    <div class="fone">
+                        <input type="text" name="fname" id="firstname" placeholder="First name">
+                        <small class="f_name" id="f_nameError"></small>
+                    </div>
+                    <div class="fone">
+                        <input type="text" name="sname" id="surname" placeholder="Surname">
+                        <small class="s_name" id="s_nameError"></small>
+                    </div>
+                </div>
+                <div action="" class="user_data">
+                    <input type="text" name="mob_ema" id="mob_mail" placeholder="Mobile number or email address">
+                    <small id="mail_error"></small>
+                    <input type="password" name="passw" id="pass" placeholder="New password">
+                    <small id="pass_error"></small>
+                </div>
+                <p class="date_birth">Date of birth <i class="fa-solid fa-circle-question"></i></p>
+                <div action="" class="birth">
                 <select name="day" id="days" >
                     <option value="">1</option>
                     <option value="">2</option>
@@ -171,26 +180,27 @@
                     <option value="">2005</option>
                     <option value="">2004</option>
                 </select>
-            </form>
-            <p class="date_birth">Gender <i class="fa-solid fa-circle-question"></i></p>
-            <div class="gender">
-                <form action="">
-                    <label for="fema">Female</label>
-                    <input type="radio" name="gend" id="fema">
-                </form>
-                <form action="">
-                    <label for="mal">Male</label>
-                    <input type="radio" name="gend" id="mal">
-                </form>
-                <form action="">
-                    <label for="cust">Custom</label>
-                    <input type="radio" name="gend" id="cust">
-                </form>
-            </div>
+                </div>
+                <p class="date_birth">Gender <i class="fa-solid fa-circle-question"></i></p>
+                <div class="gender">
+                    <div class="allgend">
+                        <label for="fema">Female</label>
+                        <input type="radio" name="gend" id="fema">
+                    </div>
+                    <div class="allgend">
+                        <label for="mal">Male</label>
+                        <input type="radio" name="gend" id="mal">
+                    </div>
+                    <div class="allgend">
+                        <label for="cust">Custom</label>
+                        <input type="radio" name="gend" id="cust">
+                    </div>
+                </div>
             <p class="lower">People who use our service may have uploaded your contact information to Facebook. <a href=""> Learn more.</a></p>
             <p class="lower">By clicking Sign Up, you agree to our <a href="">Terms,</a><a href="">Privacy Policy</a> and <a href="">Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time</p>
-            <form class="sign_up" action="">
+            <div class="sign_up">
                 <input type="submit" value="Sign Up">
+            </div>
             </form>
         </div>
     </section>
