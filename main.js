@@ -12,7 +12,7 @@ function formValidate() {
         userError.innerHTML = text;
         return false;
     }
-    else if ((isNaN (uPassword)),(uPassword === "")){
+    else if ((isNaN (uPassword)) , (uPassword === "")){
         //error
         text = "Please Enter a Vailed password";
         passError.innerHTML = text;
@@ -61,12 +61,18 @@ function signUpValidate() {
         s_name_Error.innerHTML = message;
         return false;
     }
-    else if (mailMobName === ""){
+    else if (mailMobName === "" || mailMobName.indexOf("@") === -1){
         // error
         message = "Enter Your email or Phone Number";
         mail_Error.innerHTML = message;
         return false;
     }
+    // else if (mailMobName.indexof("@") === -1){
+    //     // error
+    //     message = "Enter Valid email or Phone Number";
+    //     mail_Error.innerHTML = message;
+    //     return false;
+    // }
     else if (passow === ""){
         // error
         message = "Enter Your Password";
