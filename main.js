@@ -68,7 +68,7 @@ function signUpValidate() {
         return false;
     }
     
-    else if (passow === ""){
+    else if ( passow === "" ){
         // error
         message = "Enter Your Password";
         pass_Error.innerHTML = message;
