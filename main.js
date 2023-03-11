@@ -21,7 +21,7 @@ function formValidate() {
     }
     
     else{
-        alert("Done");
+        // alert("Done");
         return true;
     }
 }
@@ -67,12 +67,7 @@ function signUpValidate() {
         mail_Error.innerHTML = message;
         return false;
     }
-    // else if (mailMobName.indexof("@") === -1){
-    //     // error
-    //     message = "Enter Valid email or Phone Number";
-    //     mail_Error.innerHTML = message;
-    //     return false;
-    // }
+    
     else if (passow === ""){
         // error
         message = "Enter Your Password";
