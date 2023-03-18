@@ -358,3 +358,39 @@ main .container_1{
     width: 1000px;
 }
 }
+@media (min-width:350px) and (max-width:1017px){
+    main .container_1{
+        height: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main .container_1 .left{
+        width: 350px;
+    }
+    main .container_1 .main_right{
+        width: 350px;
+    }
+    main .container_1 .right .creat{
+        width: 60%;
+        margin: 24px auto;
+    }
+    footer ul{
+        max-width: 90%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    footer .data{
+        max-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer p{
+        max-width: 90%;
+    }
+
+}
